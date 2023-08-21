@@ -1,0 +1,13 @@
+.controller-tester {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .retry-button {
+    margin-top: 20px;
+  }
