@@ -22,3 +22,46 @@
 .App-link {
   color: #61dafb;
 }
+
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  transform: rotate(90deg); /* Rotate the container to mimic horizontal phone hold */
+  transform-origin: left bottom; /* Set the rotation origin */
+}
+
+.card-container {
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px -5px;
+  transform: rotate(-90deg) scaleX(-1); /* Rotate and flip the card horizontally */
+  transform-origin: left bottom; /* Set the rotation origin */
+}
+
+.card-content {
+  transform: rotate(90deg); /* Counter-rotate the content to appear correctly */
+}
+
+.image-container img {
+  overflow: hidden;
+  height: 200px;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    overflow-x: hidden;
+    transform: none; /* Reset rotation for small screens */
+  }
+
+  .card-container {
+    transform: none; /* Reset transformations on small screens */
+  }
+
+  .card-content {
+    transform: none; /* Reset transformations on small screens */
+  }
+}
