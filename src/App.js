@@ -1,12 +1,13 @@
 // import React from "react";
-// import ControllerTester from "./ControllerTester";
 // import "./App.css";
+// import Home from "./Home";
+// import ControllerTester from "./ControllerTester";
 
 // function App() {
 //   return (
 //     <div className="App">
 //       <header className="App-header">
-//         <ControllerTester />
+//         <Home />
 //       </header>
 //     </div>
 //   );
@@ -14,27 +15,53 @@
 
 // export default App;
 
-import React from "react";
-import Card from "./Card";
-import "./App.css";
+// import React from "react";
+// import Card from "./Card";
+// import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <div className="cards-container">
-        <Card
-          title="Card title"
-          imageUrl="https://esports.gg/_next/image/?url=https%3A%2F%2Fadmin.esports.gg%2Fwp-content%2Fuploads%2F2023%2F05%2Fryu-hadoken-street-fighter-6.png&w=3840&q=75"
-          body="Testing"
-        />
-        <Card
-          title="Card title"
-          imageUrl="https://esports.gg/_next/image/?url=https%3A%2F%2Fadmin.esports.gg%2Fwp-content%2Fuploads%2F2023%2F05%2Fryu-hadoken-street-fighter-6.png&w=3840&q=75"
-          body="Testing"
-        />
-      </div>
-    </div>
-  );
-}
+// function App() {
+//   return (
+//     <div className="App">
+//       <div className="cards-container">
+//         <Card
+//           title="Card title"
+//           imageUrl="https://esports.gg/_next/image/?url=https%3A%2F%2Fadmin.esports.gg%2Fwp-content%2Fuploads%2F2023%2F05%2Fryu-hadoken-street-fighter-6.png&w=3840&q=75"
+//           body="Testing"
+//         />
+//         <Card
+//           title="Card title"
+//           imageUrl="https://esports.gg/_next/image/?url=https%3A%2F%2Fadmin.esports.gg%2Fwp-content%2Fuploads%2F2023%2F05%2Fryu-hadoken-street-fighter-6.png&w=3840&q=75"
+//           body="Testing"
+//         />
+//       </div>
+//     </div>
+//   );
+// }
 
-export default App;
+// export default App;
+
+// import React from "react";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+//   Link,
+//   BrowserRouter,
+// } from "react-router-dom";
+// import Home from "./Home";
+// import ControllerTester from "./ControllerTester";
+// import "./ControllerTester.css";
+// import "./App.css";
+
+// function App() {
+//   return (
+//     <BrowserRouter>
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/ControllerTester" element={<ControllerTester />} />
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// }
+
+// export default App;

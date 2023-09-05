@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./ControllerTester.css";
+import "./App.css";
 
 const ControllerTester = () => {
   const [buttonPresses, setButtonPresses] = useState([]);
