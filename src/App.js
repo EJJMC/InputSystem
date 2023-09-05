@@ -45,7 +45,6 @@ import {
   Routes,
   Route,
   BrowserRouter,
-  HashRouter,
 } from "react-router-dom";
 import Home from "./pages/Home";
 import ControllerTester from "./pages/ControllerTester";
@@ -55,14 +54,42 @@ import "./App.css";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/ControllerTester" element={<ControllerTester />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
+// import React from "react";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+//   BrowserRouter,
+//   HashRouter,
+// } from "react-router-dom";
+// import Home from "./pages/Home";
+// import ControllerTester from "./pages/ControllerTester";
+// import Test from "./pages/Test";
+
+// import "./App.css";
+
+// function App() {
+//   return (
+//     <HashRouter>
+//       <Routes>
+//         <Route index element={<Home />} />
+//         <Route path="/home" element={<Home />} />
+//         <Route path="/ControllerTester" element={<ControllerTester />} />
+//       </Routes>
+//     </HashRouter>
+//   );
+// }
+
+// export default App;
