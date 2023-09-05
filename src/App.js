@@ -1,7 +1,6 @@
 // import React from "react";
 // import "./App.css";
-// import Home from "./Home";
-// import ControllerTester from "./ControllerTester";
+// import Home from "./pages/Home";
 
 // function App() {
 //   return (
@@ -46,6 +45,7 @@ import {
   Routes,
   Route,
   BrowserRouter,
+  HashRouter,
 } from "react-router-dom";
 import Home from "./pages/Home";
 import ControllerTester from "./pages/ControllerTester";
@@ -55,13 +55,13 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route index element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/ControllerTester" element={<ControllerTester />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
