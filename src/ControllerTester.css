@@ -32,7 +32,7 @@ h1, div, .error {
 body, html {
   margin: 0;
   overflow: hidden; /* Prevent scrolling */
-  background-color: #ccc;
+  background-color: #030303;
   height: 100%;
 }
 
