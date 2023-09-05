@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./Card.css";
 
 function Card({ title, body, imageUrl }) {
   // Destructure props here

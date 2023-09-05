@@ -40,28 +40,29 @@
 
 // export default App;
 
-// import React from "react";
-// import {
-//   BrowserRouter as Router,
-//   Routes,
-//   Route,
-//   Link,
-//   BrowserRouter,
-// } from "react-router-dom";
-// import Home from "./Home";
-// import ControllerTester from "./ControllerTester";
-// import "./ControllerTester.css";
-// import "./App.css";
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  BrowserRouter,
+} from "react-router-dom";
+import Home from "./pages/Home";
+import ControllerTester from "./pages/ControllerTester";
+import Test from "./pages/Test";
 
-// function App() {
-//   return (
-//     <BrowserRouter>
-//       <Routes>
-//         <Route path="/" element={<Home />} />
-//         <Route path="/ControllerTester" element={<ControllerTester />} />
-//       </Routes>
-//     </BrowserRouter>
-//   );
-// }
+import "./App.css";
 
-// export default App;
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/ControllerTester" element={<ControllerTester />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
